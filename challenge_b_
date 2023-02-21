@@ -1,0 +1,33 @@
+2.times do
+  sample :drum_snare_soft
+  sleep 2
+end
+4.times do
+  sample :drum_heavy_kick, amp: 2
+  sleep 1
+end
+
+8.times do
+  sample :drum_cymbal_closed
+  sleep 0.5
+end
+
+sample :drum_snare_soft, amp: 2
+sample :drum_heavy_kick, amp: 2
+sample :drum_cymbal_closed, amp: 3
+sample :drum_splash_hard, sustain: 3, amp: 3
+sample :drum_cymbal_hard, amp: 2
+sample :drum_cowbell, amp: 1.5
+sleep 0.5
+sample :drum_cymbal_closed
+sleep 0.5
+
+12.times do
+  sample :drum_heavy_kick, amp: 2
+  sample :drum_cymbal_closed
+  sleep 0.5
+  sample :drum_snare_soft, amp: 2
+  sample :drum_heavy_kick, amp: 2
+  sample :drum_cymbal_closed
+  sleep 0.5
+end
