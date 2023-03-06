@@ -3,21 +3,22 @@
 live_loop :treble_clef do
   use_bpm 74
   use_synth :piano
+  sleep 1
   2.times do
     #1/3
-    play :E4
-    play :C4
+    play :Es4
+    play :B3
     sleep 1
-    play :D4
-    play :C4
+    play :Ds4
+    play :B3
     sleep 1
-    play :F4
-    play :C4
+    play :Fs4
+    play :B3
     sleep 1
-    play :E4
-    play :C4
+    play :Es4
+    play :B3
     sleep 0.75
-    play :C4
+    play :B3
     sleep 0.5
     #2/4
     x
@@ -28,37 +29,187 @@ live_loop :treble_clef do
     sleep 1
     x
     sleep 0.5
-    play :C4
+    play :B3
     sleep 0.5
   end
   #5
   4.times do
-    play :E4
-    play :F4
-    play :C4
+    y
     sleep 1
   end
   #6
-  play :E4
-  play :F4
+  play :Ds4
+  play :Fs4
   sleep 1
   x
   sleep 0.75
-  play :C4
+  play :B3
   sleep 0.25
-  play :D4
-  play :F4
-  play :E4
+  play :Ds4
+  play :Fs4
+  play :Cs4
   sleep 1
   x
   sleep 0.75
+  play :B3
+  sleep 0.25
+  #7
+  y
+  sleep 1
+  y
+  sleep 1
+  y
+  sleep 1
+  play :Cs4
+  sleep 0.25
   play :C4
   sleep 0.25
+  play :B3
+  sleep 0.25
+  play :Bb3
+  sleep 0.25
+  #8
+  play :Es4
+  play :C4
+  play :A3
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  #9
+  y
+  sleep 1
+  y
+  sleep 1
+  play :Fs4
+  play :Es4
+  play :B3
+  sleep 1
+  y
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  #10
+  play :Fs4
+  play :Ds4
+  sleep 1
+  x
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  play :Fs4
+  play :Ds4
+  play :Cs4
+  sleep 1
+  x
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  #11
+  y
+  sleep 1
+  y
+  sleep 1
+  y
+  sleep 1
+  play :Cs4
+  sleep 0.25
+  play :C4
+  sleep 0.25
+  play :B3
+  sleep 0.25
+  play :Bb3
+  sleep 0.25
+  #12
+  play :Es4
+  play :C4
+  play :A3
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  #13
+  z
+  sleep 1
+  z
+  sleep 0.5
+  play :G3
+  sleep 0.25
+  play :A3
+  sleep 0.25
+  play :Fs4
+  play :Cs4
+  play :As3
+  sleep 1
+  play :Fs4
+  play :Cs4
+  play :A3
+  sleep 1
+  #14
+  play :Fs4
+  play :Ds4
+  sleep 0.5
+  play :B3
+  sleep 0.5
+  x
+  sleep 1
+  play :G4
+  play :Ds4
+  play :Cs4
+  sleep 1
+  play :G4
+  play :Ds4
+  play :B3
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  #15
+  z
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  z
+  sleep 1
+  #16
+  play :Es4
+  play :C4
+  play :A3
+  sleep 1
+  z
+  sleep 0.75
+  play :G3
+  sleep 0.25
+  play :Es4
+  play :Cs4
+  sleep 1
+  #17
   stop
 end
 
 define :x do
-  play :F4
-  play :D4
-  play :C4
+  puts ("x")
+  play :Fs4
+  play :Ds4
+  play :B3
+end
+
+define :y do
+  puts ("y")
+  play :Es4
+  play :Cs4
+  play :A3
+end
+
+define :z do
+  play :Es4
+  play :Cs4
+  play :A3
 end
