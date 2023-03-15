@@ -1,4 +1,19 @@
 #CANCER _ MCR
+#---------------------------------------------------------------------------------------------
+#measure counter weeeeeeeooooooo
+
+MC = ["measure_1","measure_2","measure_3","measure_4","measure_5","measure_6","measure_7","measure_8","measure_9","measure_10","measure_11","measure_12","measure_13","measure_14","measure_15","measure_16","measure_17","measure_18","measure_19","measure_20","measure_21","measure_22","measure_23","measure_24","measure_25","measure_26","measure_27","measure_28","measure_29","measure_30","measure_31","measure_32","measure_33","measure_34","measure_35","measure_36","measure_37","measure_38","measure_39","measure_40","measure_41","measure_42","measure_43","measure_44"]
+m = 0
+live_loop :MeasureCounter do
+  45.times do
+    puts(MC[m])
+    sleep(3.8)
+    m = m + 1
+  end
+  stop
+end
+
+#---------------------------------------------------------------------------------------------
 
 live_loop :treble_clef do
   use_bpm 74
@@ -6,7 +21,6 @@ live_loop :treble_clef do
   sleep 1
   2.times do
     #1/3
-    puts ("measure 1/3")
     play :Es4
     play :B3
     sleep 1
@@ -22,7 +36,6 @@ live_loop :treble_clef do
     play :B3
     sleep 0.5
     #2/4
-    (puts "measure 2/4")
     x
     sleep 1
     x
@@ -35,13 +48,11 @@ live_loop :treble_clef do
     sleep 0.5
   end
   #5
-  puts ("measure 5")
   4.times do
     y
     sleep 1
   end
   #6
-  puts ("measure 6")
   play :Ds4
   play :Fs4
   sleep 1
@@ -58,7 +69,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #7
-  puts ("measure 7")
   y
   sleep 1
   y
@@ -74,7 +84,6 @@ live_loop :treble_clef do
   play :Bb3
   sleep 0.25
   #8
-  puts ("measure 8")
   play :Es4
   play :C4
   play :A3
@@ -86,7 +95,6 @@ live_loop :treble_clef do
   z
   sleep 1
   #9
-  puts ("measure 9")
   y
   sleep 1
   y
@@ -100,7 +108,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #10
-  puts ("measure 10")
   play :Fs4
   play :Ds4
   sleep 1
@@ -117,7 +124,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #11
-  puts ("measure 11")
   y
   sleep 1
   y
@@ -133,7 +139,6 @@ live_loop :treble_clef do
   play :Bb3
   sleep 0.25
   #12
-  puts ("measure 12")
   play :Es4
   play :C4
   play :A3
@@ -145,7 +150,6 @@ live_loop :treble_clef do
   z
   sleep 1
   #13
-  puts ("measure 13")
   z
   sleep 1
   z
@@ -163,7 +167,6 @@ live_loop :treble_clef do
   play :A3
   sleep 1
   #14
-  puts ("measure 14")
   play :Fs4
   play :Ds4
   sleep 0.5
@@ -182,7 +185,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #15
-  puts ("measure 15")
   z
   sleep 1
   z
@@ -192,7 +194,6 @@ live_loop :treble_clef do
   z
   sleep 1
   #16
-  puts ("measure 16")
   play :Es4
   play :C4
   play :A3
@@ -207,21 +208,8 @@ live_loop :treble_clef do
   play :Cs4
   sleep 1
   #17
-  puts ("measure 17")
-  play :Fs3
-  sleep 0.5
-  play :Fs3
-  sleep 0.5
-  play :Ds3
-  sleep 0.5
-  play :Fs3
-  sleep 0.5
-  play :Ds3
-  sleep 1
-  play :Ds3
-  sleep 1
+  sleep 4
   #18
-  puts ("Measure 18")
   play :B3
   play :Ds4
   sleep 1
@@ -237,13 +225,11 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #19
-  puts ("Measure 19")
   4.times do
     a
     sleep 1
   end
   #20
-  puts ("Measure 20")
   a
   sleep 1
   a
@@ -255,7 +241,6 @@ live_loop :treble_clef do
   a
   sleep 1
   #21
-  puts ("Measure 21")
   play :G4
   play :B4
   sleep 1
@@ -277,7 +262,6 @@ live_loop :treble_clef do
   play :Es4
   sleep 0.25
   #22
-  puts ("Measure 22")
   play :Fs4
   play :G4
   sleep 1
@@ -294,7 +278,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #23
-  puts ("Measure 23")
   b
   sleep 1
   b
@@ -310,13 +293,11 @@ live_loop :treble_clef do
   play :Bb3
   sleep 0.25
   #24
-  puts ("Measure 24")
   4.times do
     z
     sleep 1
   end
   #25
-  puts ("Measure 25")
   a
   sleep 1
   a
@@ -330,7 +311,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #26
-  puts ("Measure 26")
   play :Fs4
   play :D4
   sleep 1
@@ -345,7 +325,6 @@ live_loop :treble_clef do
   play :B3
   sleep 0.25
   #27
-  puts ("Measure 27")
   a
   sleep 1
   a
@@ -361,13 +340,11 @@ live_loop :treble_clef do
   play :Bb3
   sleep 0.25
   #28
-  puts ("Measure 28")
   4.times do
     z
     sleep 1
   end
   #29
-  puts ("Measure 29")
   z
   sleep 1
   z
@@ -385,9 +362,177 @@ live_loop :treble_clef do
   play :A3
   sleep 1
   #30
-  puts ("Measure 30")
+  play :Fs4
+  play :Ds4
+  sleep 0.5
+  play :B3
+  sleep 0.5
+  play :Fs4
+  play :Ds4
+  play :B3
+  sleep 1
+  play :A4
+  play :Ds4
+  play :Bs3
+  sleep 1
+  play :A4
+  play :Ds4
+  play :B3
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  #31
+  c
+  sleep 1
+  c
+  sleep 1
+  c
+  sleep 1
+  c
+  sleep 1
+  #32
+  y
+  sleep 0.5
+  y
+  sleep 0.25
+  y
+  sleep 0.25
+  y
+  sleep 0.5
+  y
+  sleep 2.5
+  #33-37
+  sleep 20
+  #38
+  play :Ds4
+  play :B3
+  sleep 1
+  play :Ds4
+  play :B3
+  sleep 1
+  play :Es4
+  play :B3
+  sleep 1
+  play :Fs4
+  play :B3
+  sleep 1
+  #39
+  play :G3
+  play :Es4
+  play :Cs4
+  sleep 1
+  play :G3
+  play :Es4
+  play :Cs4
+  sleep 1
+  play :G3
+  play :Es4
+  play :C4
+  sleep 1
+  play :G3
+  play :Es4
+  play :Cs4
+  sleep 1
+  #40
+  play :G3
+  play :Es4
+  play :B3
+  sleep 1
+  play :G3
+  play :Es4
+  play :B3
+  sleep 1
+  play :Es4
+  play :Cs4
+  play :As3
+  sleep 1
+  y
+  sleep 1
+  #41
+  sleep 4
+  #42
+  play :Ds4
+  play :B3
+  sleep 1
+  play :Ds4
+  play :B3
+  sleep 1
+  play :Es4
+  play :B3
+  sleep 1
+  play :Fs4
+  play :B3
+  sleep 0.75
+  play :B3
+  sleep 0.25
+  #43/44
+  puts ("ENDING WOOOOOOOO")
+  use_synth :sine
+  endT
+  endT
+  endT
+  endT
+  endT
   stop
 end
+
+#---------------------------------------------------------------------------------------------
+
+live_loop :bass_clef do
+  use_bpm 74
+  use_synth :piano
+  #1
+  sleep 1
+  play :E3
+  sleep 1.5
+  play :E3
+  sleep 0.5
+  play :E3
+  sleep 0.5
+  play :E3
+  sleep 1
+  play :E3
+  sleep 0.5
+  #2
+  play :B2, amp: 0.5
+  sleep 1
+  play :B2, amp: 0.5
+  sleep 0.75
+  play :B2, amp: 0.5
+  sleep 0.25
+  play :B2, amp: 0.5
+  sleep 0.5
+  play :B2, amp: 0.5
+  sleep 1
+  play :B2, amp: 0.5
+  sleep 0.5
+  #3
+  play :E3
+  play :E2
+  sleep 1.5
+  play :E3
+  sleep 0.5
+  play :E3
+  sleep 0.5
+  play :E3
+  sleep 1
+  play :E3
+  sleep 0.5
+  #4
+  play :B2, attack: 0.3, amp: 0.5
+  sleep 2
+  play :B2, amp: 0.5
+  sleep 0.5
+  play :B2, amp: 0.5
+  sleep 1
+  play :B2, amp: 0.5
+  sleep 0.5
+  stop
+end
+
+#---------------------------------------------------------------------------------------------
+
+
 
 define :x do
   puts ("x")
@@ -422,4 +567,30 @@ define :b do
   play :B3
   play :Es4
   play :Cs4
+end
+
+define:c do
+  puts ("c")
+  play :G4
+  play :Es4
+  play :Cs4
+end
+
+define :endT do
+  play :G4, release: 5, attack: 0.3
+  play :Es4, release: 5, attack: 0.3
+  play :B3, release: 5, attack: 0.3
+  sleep 0.1
+  play :G4, release: 5, attack: 0.3
+  play :Es4, release: 5, attack: 0.3
+  play :B3, release: 5, attack: 0.3
+  sleep 0.1
+  play :G4, release: 5, attack: 0.3
+  play :Es4, release: 5, attack: 0.3
+  play :B3, release: 5, attack: 0.3
+  sleep 0.1
+  play :G4, release: 5, attack: 0.3
+  play :Es4, release: 5, attack: 0.3
+  play :B3, release: 5, attack: 0.3
+  sleep 0.1
 end
